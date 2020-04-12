@@ -6,7 +6,9 @@
       class="bg-overlay fixed top-0 left-0 h-screen w-full flex items-center justify-center"
     >
       <!-- Modal -->
-      <div class="w-2/5 bg-white rounded py-10 px-6 shadow-lg absolute">
+      <div
+        class="w-4/5 md:w-2/5 bg-white rounded py-10 px-6 shadow-lg absolute"
+      >
         <div class="text-right">
           <button @click="toggleModal" class="text-4xl text-gray-600">
             &times;
@@ -38,6 +40,7 @@
       </div>
     </div>
 
+    <!-- content -->
     <div class="h-screen w-full flex items-center justify-center">
       <button
         @click="toggleModal"
