@@ -1,6 +1,6 @@
 # tailwindcss-vuejs
 
-This repository contains the codebase for my _How to setup Tailwindcss with VueJS_ article published (here)[https://francisudeji.com/blog/how-to-setup-tailwindcss-with-vuejs]
+This repository contains the codebase for my **How to setup Tailwindcss with VueJS** article published [here](https://francisudeji.com/blog/how-to-setup-tailwindcss-with-vuejs)
 
 ## Project setup
 
