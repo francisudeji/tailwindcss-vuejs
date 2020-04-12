@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css"
   },
   "dependencies": {
     "core-js": "^3.6.4",
