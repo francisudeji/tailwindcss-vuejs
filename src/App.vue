@@ -3,11 +3,11 @@
     <!-- modal layout -->
     <div
       v-if="isModalOpen"
-      class="bg-overlay fixed top-0 left-0 h-screen w-full flex items-center justify-center"
+      class="fixed top-0 left-0 flex items-center justify-center w-full h-screen bg-overlay"
     >
       <!-- Modal -->
       <div
-        class="w-4/5 md:w-2/5 bg-white rounded py-10 px-6 shadow-lg absolute"
+        class="absolute w-4/5 px-6 py-10 bg-white rounded shadow-lg md:w-2/5"
       >
         <div class="text-right">
           <button @click="toggleModal" class="text-4xl text-gray-600">
@@ -15,24 +15,24 @@
           </button>
         </div>
 
-        <h1 class="text-3xl text-gray-800 font-bold block text-center">
+        <h1 class="block text-3xl font-bold text-center text-gray-800">
           One more step!
         </h1>
 
-        <p class="mt-2 text-base text-gray-700 font-light block text-center">
+        <p class="block mt-2 text-base font-light text-center text-gray-700">
           We sent a One Time Password (OTP) to abc.xyz@email.com.
         </p>
 
         <div class="flex px-16 mt-6">
-          <input type="text" class="text-center h-16 w-1/4 border-2" />
-          <input type="text" class="text-center h-16 w-1/4 border-2" />
-          <input type="text" class="text-center h-16 w-1/4 border-2" />
-          <input type="text" class="text-center h-16 w-1/4 border-2" />
+          <input type="text" class="w-1/4 h-16 text-center border-2" />
+          <input type="text" class="w-1/4 h-16 text-center border-2" />
+          <input type="text" class="w-1/4 h-16 text-center border-2" />
+          <input type="text" class="w-1/4 h-16 text-center border-2" />
         </div>
 
-        <div class="mt-6 px-6">
+        <div class="px-6 mt-6">
           <button
-            class="w-full block uppercase bg-blue-500 text-white py-3 px-6 rounded-lg shadow-lg focus:bg-blue-600 hover:bg-blue-600"
+            class="block w-full px-6 py-3 text-white uppercase bg-blue-500 rounded-lg shadow-lg focus:bg-blue-600 hover:bg-blue-600"
           >
             Continue
           </button>
@@ -41,10 +41,10 @@
     </div>
 
     <!-- content -->
-    <div class="h-screen w-full flex items-center justify-center">
+    <div class="flex items-center justify-center w-full h-screen">
       <button
         @click="toggleModal"
-        class="bg-blue-500 text-white rounded-lg shadow-lg py-2 px-6 focus:bg-blue-600 hover:bg-blue-600"
+        class="px-6 py-2 text-white bg-blue-500 rounded-lg shadow-lg focus:bg-blue-600 hover:bg-blue-600"
       >
         Open Modal
       </button>
@@ -54,21 +54,16 @@
 
 <script>
 export default {
-  name: "App",
+  name: 'App',
   data() {
     return {
-      isModalOpen: false
+      isModalOpen: false,
     };
   },
   methods: {
     toggleModal() {
-      if (this.isModalOpen) {
-        this.isModalOpen = false;
-        return;
-      }
-
-      this.isModalOpen = true;
-    }
-  }
+      this.isModalOpen = !this.isModalOpen;
+    },
+  },
 };
 </script>
