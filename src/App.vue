@@ -7,7 +7,7 @@
     >
       <!-- Modal -->
       <div
-        class="absolute w-4/5 px-6 py-10 bg-white rounded shadow-lg md:w-2/5"
+        class="absolute w-4/5 px-6 py-10 bg-white rounded shadow-lg md:w-3/5 lg:w-2/5"
       >
         <div class="text-right">
           <button @click="toggleModal" class="text-4xl text-gray-600">
