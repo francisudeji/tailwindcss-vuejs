@@ -2,4 +2,8 @@
 
 @tailwind components;
 
+.input {
+  @apply w-1/4 h-16 text-center border-2;
+}
+
 @tailwind utilities;

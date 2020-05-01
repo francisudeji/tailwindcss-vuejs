@@ -623,6 +623,13 @@ video {
   }
 }
 
+.input {
+  width: 25%;
+  height: 4rem;
+  text-align: center;
+  border-width: 2px;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

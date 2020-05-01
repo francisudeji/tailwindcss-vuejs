@@ -24,10 +24,10 @@
         </p>
 
         <div class="flex px-16 mt-6">
-          <input type="text" class="w-1/4 h-16 text-center border-2" />
-          <input type="text" class="w-1/4 h-16 text-center border-2" />
-          <input type="text" class="w-1/4 h-16 text-center border-2" />
-          <input type="text" class="w-1/4 h-16 text-center border-2" />
+          <input type="text" class="input" />
+          <input type="text" class="input" />
+          <input type="text" class="input" />
+          <input type="text" class="input" />
         </div>
 
         <div class="px-6 mt-6">
